@@ -1,0 +1,75 @@
+/* Paleta de colores inspirada en RWBY */
+:root {
+    --rwby-red: #FF0000; /* Rojo */
+    --rwby-white: #FFFFFF; /* Blanco */
+    --rwby-black: #000000; /* Negro */
+    --rwby-yellow: #FFC000; /* Amarillo */
+    --text-color: #333333; /* Gris oscuro para texto */
+    --accent-color: #008080; /* Turquesa para detalles (inspirado en el nombre "Sapphire") */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--rwby-white);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--rwby-black);
+    color: var(--rwby-white);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--rwby-red);
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.character {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid var(--rwby-red);
+    background-color: var(--rwby-yellow);
+}
+
+.character h2 {
+    color: var(--rwby-black);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.character h3 {
+    font-size: 1.4em;
+    color: var(--rwby-red);
+}
+
+.character p, .character ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: var(--rwby-black);
+    color: var(--rwby-white);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
