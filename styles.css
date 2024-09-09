@@ -1,31 +1,33 @@
-/* Paleta de colores inspirada en RWBY */
+/* Paleta de colores accesibles (AAA) */
 :root {
-    --rwby-red: #FF0000; /* Rojo */
-    --rwby-white: #FFFFFF; /* Blanco */
-    --rwby-black: #000000; /* Negro */
-    --rwby-yellow: #FFC000; /* Amarillo */
-    --text-color: #333333; /* Gris oscuro para texto */
-    --accent-color: #008080; /* Turquesa para detalles (inspirado en el nombre "Sapphire") */
+    --color-background: #ffffff; /* Blanco */
+    --color-text: #1a1a1a; /* Gris oscuro */
+    --color-primary: #005b96; /* Azul oscuro accesible */
+    --color-secondary: #e97451; /* Coral accesible */
+    --color-accent: #ffdd57; /* Amarillo claro */
+    --color-header: #4b4b4b; /* Gris medio para cabecera */
+    --color-footer: #333333; /* Gris oscuro para pie de página */
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: var(--rwby-white);
-    color: var(--text-color);
+    background-color: var(--color-background);
+    color: var(--color-text);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: var(--rwby-black);
-    color: var(--rwby-white);
+    background-color: var(--color-header);
+    color: var(--color-background);
     text-align: center;
     padding: 20px;
 }
 
 header h1 {
     font-size: 2.5em;
-    color: var(--rwby-red);
+    color: var(--color-primary);
+    margin: 0;
 }
 
 header p {
@@ -40,19 +42,19 @@ main {
 .character {
     margin-bottom: 20px;
     padding: 15px;
-    border-left: 5px solid var(--rwby-red);
-    background-color: var(--rwby-yellow);
+    border-left: 5px solid var(--color-primary);
+    background-color: var(--color-accent);
 }
 
 .character h2 {
-    color: var(--rwby-black);
+    color: var(--color-secondary);
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .character h3 {
     font-size: 1.4em;
-    color: var(--rwby-red);
+    color: var(--color-primary);
 }
 
 .character p, .character ul {
@@ -65,11 +67,27 @@ ul li {
 }
 
 footer {
-    background-color: var(--rwby-black);
-    color: var(--rwby-white);
+    background-color: var(--color-footer);
+    color: var(--color-background);
     text-align: center;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    .character h2 {
+        font-size: 1.5em;
+    }
+    .character h3 {
+        font-size: 1.2em;
+    }
 }
